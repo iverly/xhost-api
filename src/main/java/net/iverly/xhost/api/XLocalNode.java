@@ -1,6 +1,6 @@
 package net.iverly.xhost.api;
 
-import com.sun.istack.internal.NotNull;
+import org.jetbrains.annotations.NotNull;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -128,7 +128,6 @@ public class XLocalNode {
      *
      * @return server using network
      */
-    @NotNull
     public boolean isUseNetwork() { return false; }
 
 }

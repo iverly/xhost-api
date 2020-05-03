@@ -1,7 +1,7 @@
 package net.iverly.xhost.api;
 
-import com.sun.istack.internal.NotNull;
 import net.md_5.bungee.api.config.ServerInfo;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
 
@@ -17,7 +17,7 @@ public class XServer {
      * @param name Name registered on BungeeCord and Docker need to be unique
      * @param port Port exposed to host, need to be not used
      */
-    public XServer(@NotNull String name, @NotNull int port) {}
+    public XServer(@NotNull String name, int port) {}
 
     /**
      * XServer represent a Minecraft server
@@ -48,7 +48,6 @@ public class XServer {
      *
      * @return port of the server
      */
-    @NotNull
     public int getPort() { return 0; }
 
     /**
@@ -56,7 +55,6 @@ public class XServer {
      *
      * @return server using exposed port
      */
-    @NotNull
     public boolean isExposedPort() { return false; }
 
     /**
@@ -96,7 +94,6 @@ public class XServer {
      *
      * @return server is loaded
      */
-    @NotNull
     public boolean isLoaded() { return false; }
 
     /**
@@ -104,7 +101,6 @@ public class XServer {
      *
      * @return server is starting
      */
-    @NotNull
     public boolean isStarting() { return false; }
 
     /**
@@ -112,7 +108,6 @@ public class XServer {
      *
      * @return server is started
      */
-    @NotNull
     public boolean isStarted() { return false; }
 
 }
