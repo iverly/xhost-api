@@ -1,0 +1,16 @@
+os: linux
+dist: xenial
+language: java
+jdk: openjdk8
+
+after_script:
+  - mvn javadoc:javadoc
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: target/site/apidocs
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: master
