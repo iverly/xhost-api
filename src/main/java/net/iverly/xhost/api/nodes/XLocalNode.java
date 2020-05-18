@@ -1,5 +1,6 @@
-package net.iverly.xhost.api;
+package net.iverly.xhost.api.nodes;
 
+import net.iverly.xhost.api.XServer;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.FileNotFoundException;

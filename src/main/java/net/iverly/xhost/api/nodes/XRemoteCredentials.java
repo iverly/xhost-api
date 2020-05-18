@@ -1,4 +1,4 @@
-package net.iverly.xhost.api;
+package net.iverly.xhost.api.nodes;
 
 import org.jetbrains.annotations.NotNull;
 
