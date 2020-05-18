@@ -23,7 +23,7 @@ public class XLocalNode {
      *
      * @param dataPath Path of your data folder on the node
      */
-    public XLocalNode(@NotNull String dataPath) {}
+    public XLocalNode(@NotNull String dataPath) throws Exception {}
 
     /**
      * XLocalNode represent your machine as a node.
@@ -31,7 +31,7 @@ public class XLocalNode {
      * @param dataPath Path of your data folder on the node
      * @param network Network name on Docker to link all XServer
      */
-    public XLocalNode(@NotNull String dataPath, @NotNull String network) {}
+    public XLocalNode(@NotNull String dataPath, @NotNull String network) throws Exception {}
 
     /**
      * Create a server from XServer to Docker

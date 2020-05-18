@@ -58,7 +58,6 @@
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>2.9</version>
                 <configuration>
-                    <javadocExecutable>${java.home}/../bin/javadoc</javadocExecutable>
                     <tags>
                         <tag>
                             <name>project</name>
@@ -99,5 +98,26 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+
+    <profiles>
+        <profile>
+            <id>jdk-8-config</id>
+            <activation>
+                <jdk>1.8</jdk>
+            </activation>
+            <properties>
+                <javadocExecutable>${java.home}/../bin/javadoc</javadocExecutable>
+            </properties>
+        </profile>
+        <profile>
+            <id>jdk-11-config</id>
+            <activation>
+                <jdk>11</jdk>
+            </activation>
+            <properties>
+                <javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
+            </properties>
+        </profile>
+    </profiles>
 
 </project>
